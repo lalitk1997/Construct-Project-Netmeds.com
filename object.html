@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     var nedmedData=[{
+         image:"https://www.netmeds.com/images/cms/aw_rbslider/slides/1651498383_asdasdas.jpg",
+     },
+     {
+         image:"https://www.netmeds.com/images/cms/aw_rbslider/slides/1651338093_Web_Home89.jpg"
+     },
+     {
+         image:"https://www.netmeds.com/images/cms/aw_rbslider/slides/1651498134_sdvbnm.jpg"
+     },     
+     ]
+    // Trending Today
+
+    var Trending=[{
+        timg:"https://www.netmeds.com/images/cms/aw_rbslider/slides/1651058002_Clean-Dry_web.jpg",
+    },
+      
+    {timg:"https://www.netmeds.com/images/cms/aw_rbslider/slides/1651149238_Bombay-Shaving-Company_web.jpg",
+  },
+  {  timg:"https://www.netmeds.com/images/cms/aw_rbslider/slides/1634972793_Netmeds-masks_Mini_Banner__Web.jpg",
+     },
+
+     {     timg:"https://www.netmeds.com/images/cms/aw_rbslider/slides/1651058002_Clean-Dry_web.jpg",
+
+    }, 
+]
+    //  Shop by Category
+    var Category=[{
+        cimg:"https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg",
+        cname:"Covid Essentials",
+    },
+    {
+        cimg:"https://www.netmeds.com/images/category/481/thumb/ayush_1.jpg",
+        cname:"Ayush",
+    },
+    {
+        cimg:"https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg",
+        cname:"Mom & Baby",
+    },
+      
+    {cimg:"https://www.netmeds.com/images/category/665/thumb/devices_1.jpg",
+        cname:"Devices",
+    },
+     
+    {cimg:"https://www.netmeds.com/images/category/500/thumb/fitness_1.jpg",
+        cname:"Fitness",
+    }]
+
+    // Top Brand
+     var Brand=[{
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maxi.jpg?v=14",
+         bname:"Maxi",
+         discount:" UP TO 50% ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/skin-elements.jpg?v=14",
+         bname:"Skin-elements",
+         discount:" UP TO 50% ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dr-vaidyas.jpg?v=14",
+         bname:"dr-vaidyas",
+         discount:" UP TO 20% OFF ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=14",
+         bname:"Dabur",
+         discount:" UP TO 30% ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/accu-chek.jpg?v=14",
+         bname:"Accu-chek",
+         discount:" UP TO 25% OFF ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/novaherbs.jpg?v=14",
+         bname:"Novaherbs",
+         discount:" UPTO 20% OFF ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/origin-nutrition.jpg?v=14",
+         bname:"Origin-nutrition",
+         discount:" FLAT 15% OFF ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/durex.jpg?v=14",
+         bname:"Durex",
+         discount:" UP TO 25% OFF ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dettol.jpg?v=14",
+         bname:"Dettol",
+         discount:" UP TO 20% OFF ",
+     },
+
+     {
+         bimg:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=14",
+         bname:"dabur",
+         discount:" UP TO 10% OFF ",
+     },
+
+    ]
+
+       //Categories in Focus
+
+       var Fcategories=[{
+           img:"https://www.netmeds.com/images/category/3087/thumb/feminine_hygiene_1.jpg",
+           name:"Feminine Hygiene",
+           discount:"Feminine Hygiene",     
+       },
+       {
+           img:"https://www.netmeds.com/images/category/v1/525/thumb/body_care_2.jpg",
+           name:"Body Care",
+           discount:" UP TO 60% OFF ",
+       
+       },
+       {
+           img:"https://www.netmeds.com/images/category/482/thumb/ayurvedic_1.jpg",
+           name:"Ayurvedic",
+           discount:" UP TO 76% OFF ",
+       
+       },
+       {
+           img:"https://www.netmeds.com/images/category/676/thumb/orthopaedics_1.jpg",
+           name:"Orthopaedics",
+           discount:" UP TO 83% OFF ",
+       
+       },
+       {
+           img:"https://www.netmeds.com/images/category/3216/thumb/sports_supplements_1.jpg",
+           name:"Sports Supplements",
+           discount:" UP TO 60% OFF ",
+       
+       },
+       {
+           img:"https://www.netmeds.com/images/category/3061/thumb/immunity_booster_1.jpg",
+           name:"Immunity Booster",
+           discount:" UP TO 82% OFF ",
+       
+       },
+    
+    ]
+
+    // Explore Beauty
+
+    var Beauty= [
+        {
+            img:"https://www.netmeds.com/images/category/3505/thumb/facial_kits_1.jpg",
+            name:" Facial Kits ",
+    },
+    {
+            img:"https://www.netmeds.com/images/category/v1/560/thumb/lip_care_2.jpg",
+            name:" Lip Care ",
+    },
+
+    {
+            img:"https://www.netmeds.com/images/category/v1/525/thumb/body_care_2.jpg",
+            name:" Body Care ",
+    },
+
+    {
+            img:"https://www.netmeds.com/images/category/v1/547/thumb/hair_care_2.jpg",
+            name:" Hair Care ",
+    },
+
+]
+
+//Best in Beauty
+    var Bestbeauty =[{
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg?v=10",
+        name:" Maybelline ",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg?v=10",
+        name:" Garnier ",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg?v=10",
+        name:" Myglamm ",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg?v=10",
+        name:" colorbar ",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg?v=10",
+        name:" Plum ",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/revlon.jpg?v=10",
+        name:" Revlon ",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/lotus.jpg?v=10",
+        name:" Lotus ",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/faces-canada.jpg?v=10",
+        name:" faces canada ",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/loreal-paris.jpg?v=10",
+        name:" Loreal paris ",
+    },
+]
+
+// Personal Care
+
+    var Personal = [{
+        image:"https://www.netmeds.com/images/category/v1/525/thumb/body_care_2.jpg",
+        name:"Body Care",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg",
+        name:"Mom & Baby",
+    },
+    {
+        image:"https://www.netmeds.com/images/category/3934/thumb/skin_treatment_1.jpg",
+        name:"Skin Treatment",
+    },
+    {
+        image:"https://www.netmeds.com/images/category/3495/thumb/face_wash_cleansers_3.jpg",
+        name:"Face Wash & Cleansers",
+    },
+
+    {
+        image:"https://www.netmeds.com/images/category/v1/3566/thumb/shower_gels_body_wash_2.jpg",
+        name:"Shower Gels & Body Wash",
+    },
+    
+    
+]
+    //Men's Grooming
+    var Grooming=[{
+        image:"https://www.netmeds.com/images/category/v1/3420/thumb/shaving.jpg?v=1",
+        name:"Shaving",
+        discount:" UP TO 31% OFF ",
+    },
+        {
+        image:"https://www.netmeds.com/images/category/v1/3002/thumb/razors_cartridges_2.jpg?v=1",
+        name:"Razors & Cartridges",
+        discount:" UP TO 46% OFF ",
+        },
+        {
+        image:"https://www.netmeds.com/images/category/v1/3591/thumb/beard_oil_2.jpg?v=1",
+        name:"Beard Oil",
+        discount:" UP TO 25% OFF ",
+        },
+
+        {
+        image:"https://www.netmeds.com/images/category/v1/3593/thumb/beard_wash_2.jpg?v=1",
+        name:"Beard Wash",
+        discount:" UP TO 20% OFF ",
+        },  
+]
+
+    // Health Concerns
+    var Health =[{
+        image:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/diabetic-care.jpg?v=1",
+        name:"Diabetic Care",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/de-addiction.jpg?v=1",
+        name:"De-Addiction",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1",
+        name:"Lung Care",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1",
+        name:"Weight Care",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1",
+        name:"Women's Care",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg?v=1",
+        name:"Bone And Joint Pain",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg?v=1",
+        name:"Cold And Fever",
+    },    
+    ]
+
+    // Advice From Health Experts
+
+    var Advice =[{
+        image:"https://www.netmeds.com/images/cms/magefan_blog/nmslite/1651566523_chamomile-matricaria_480x180.jpg",
+        pname:"Akarkara: Benefits, Uses, Ayurvedic Indications, D..",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/magefan_blog/nmslite/1651567193_blood-pressure-monitor_480x180.jpg",
+        pname:"Blood Pressure Monitors: How To Check BP At Home M..",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/magefan_blog/nmslite/1651567510_myasthenia_480x180.jpg",
+        pname:"Myasthenia Gravis: Causes, Symptoms And Treatment ..",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/magefan_blog/nmslite/1651477656_world-asthma-day_480x180.jpg",
+        pname:"World Asthma Day 2022: Learn About The Triggers Of..",
+    },
+    {
+        image:"https://www.netmeds.com/images/cms/magefan_blog/nmslite/1651478377_rose-essential-oil_480x180.jpg",
+        pname:"Bleeding Nose/ Epistaxis: Fantastic Ayurvedic Home..",
+    },
+    ]
+
+    // All Products
+
+    var allproduct =[{
+        image:"https://www.netmeds.com/images/product-v1/150x150/14725/garnier_men_acnofight_pimple_clearing_whitening_cream_20_gm_0_2.jpg",
+        pname:"Garnier Men Acnofight Pimple Clearing Whitening Cream 20 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price*  Rs. 87.12",
+        mrp:"Rs. 189.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/14725/garnier_men_acnofight_pimple_clearing_whitening_cream_20_gm_0_2.jpg",
+        pname:"Garnier Color Naturals Creme Riche - Shade 4 Brown (70 ml + 60 gm)",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price*  Rs. 175.77",
+        mrp:"Rs. 189.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/14712/garnier_skin_natural_wrinkle_lift_anti_ageing_cream_18_gm_0_1.jpg",
+        pname:"Garnier Skin Natural Sun Control Daily Moisturiser SPF 15 Uva+ 50 ml",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 159.00 ",
+        mrp:"Rs. 189.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/14725/garnier_men_acnofight_pimple_clearing_whitening_cream_20_gm_0_2.jpg",
+        pname:"Garnier Color Naturals Creme Riche 5 Light Brown 70ml + 60 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 139.00",
+        mrp:"Rs. 179.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/14725/garnier_men_acnofight_pimple_clearing_whitening_cream_20_gm_0_2.jpg",
+        pname:"Garnier Skin Natural Sun Control Daily Moisturiser SPF 15 Uva+ 50 ml",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 123.00",
+        mrp:"Rs. 189.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/14711/garnier_skin_natural_sun_control_daily_moisturiser_spf_15_uva_50_ml_0_1.jpg",
+        pname:"Garnier Color Naturals Men Creme Riche - 3.16 Burgundy (30 ml + 30 gm)",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 112.00",
+        mrp:"Rs. 209.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/813631/garnier_color_naturals_creme_riche_3_16_burgundy_30_ml_30_gm_0.jpg",
+        pname:"Garnier Color Naturals Men Creme Riche - 3.16 Burgundy (30 ml + 30 gm)",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 112.00",
+        mrp:"Rs. 219.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/995836/garnier_bright_complete_vitamin_c_facewash_50_gm_0_2.jpg",
+        pname:"Garnier Bright Complete VITAMIN C Facewash 50 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 110.00",
+        mrp:"Rs. 319.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/983786/garnier_men_turbo_bright_brightening_face_wash_50_gm_0_0.jpg",
+        pname:"Garnier Men Turbo Bright Brightening Face Wash 50 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 312.00",
+        mrp:"Rs. 500.00"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/973025/garnier_black_rice_pure_charcoal_black_serum_mask_face_serum_sheet_mask_for_women_28_gm_0_0.jpg",
+        pname:"Garnier Black Rice Pure Charcoal Black Serum Mask Face Serum Sheet Mask for Women 28 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 121.00",
+        mrp:"Rs. 300"
+    },
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/967923/garnier_color_naturals_creme_riche_for_men_1_natural_black_60_gm_0_0.jpg",
+        pname:"Garnier Color Naturals Creme Riche for Men - 1 Natural Black 60 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 232.00",
+        mrp:"Rs. 400"
+    },
+
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/967923/garnier_color_naturals_creme_riche_for_men_1_natural_black_60_gm_0_0.jpg",
+        pname:"Garnier Color Naturals Creme Riche for Men - 1 Natural Black 60 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 232.00",
+        mrp:"Rs. 400"
+    },
+
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/967923/garnier_color_naturals_creme_riche_for_men_1_natural_black_60_gm_0_0.jpg",
+        pname:"Garnier Color Naturals Creme Riche for Men - 1 Natural Black 60 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 232.00",
+        mrp:"Rs. 400"
+    },
+
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/967923/garnier_color_naturals_creme_riche_for_men_1_natural_black_60_gm_0_0.jpg",
+        pname:"Garnier Color Naturals Creme Riche for Men - 1 Natural Black 60 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 232.00",
+        mrp:"Rs. 400"
+    },
+
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/967923/garnier_color_naturals_creme_riche_for_men_1_natural_black_60_gm_0_0.jpg",
+        pname:"Garnier Color Naturals Creme Riche for Men - 1 Natural Black 60 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 232.00",
+        mrp:"Rs. 400"
+    },
+
+    {
+        image:"https://www.netmeds.com/images/product-v1/150x150/967923/garnier_color_naturals_creme_riche_for_men_1_natural_black_60_gm_0_0.jpg",
+        pname:"Garnier Color Naturals Creme Riche for Men - 1 Natural Black 60 gm",
+        dname:"Mkt: L'Oreal India Pvt, Ltd",
+        price:"Best price* Rs. 232.00",
+        mrp:"Rs. 400"
+    },
+
+]
+
+</script>
