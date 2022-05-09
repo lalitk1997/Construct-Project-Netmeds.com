@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+
+    <div class="nav">
+        <a href="landing.html"><img _ngcontent-rls-c3="" alt="Netmeds.com, India ki Online Pharmacy" class="img" src="https://www.netmeds.com/msassets/home-logo-netmeds-new.svg"></a>
+    </div>
+    
+    <h3>Attach Prescription</h3>   
+    <div id="container"> 
+        <div id="id1">
+           <div id="id2">  <div ><h5 >Upload</h5></div>
+           <div class="red"><h4> Valid Prescription?</h4>    </div>   </div> 
+            <div id="id3"> Please upload images of valid Prescription from your doctor.</div>
+            <div id="id4">
+                <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+                <div id="display-image"></div>
+            </div>
+           
+        </div>
+
+        
+        
+        <div id="order">
+            <div id="order2">
+                <h5> ORDER INFO</h5>
+                <p>  Select how do want to proceed with the order. </p>
+                <div id="byser"> <img src="C:\Users\rajni\Desktop\github\message.JPG" alt=""/>
+                     <p>Search and Add Medicines</p> 
+                     <input type="radio">
+                </div>
+                <p class="search">Manually search and add medicines in the cart</p>
+                <div id="bycall"> <img id="call" src="C:\Users\rajni\Desktop\github\call.JPG" alt=""/>
+                    <p> Get call from Netmeds</p>
+                    <input type="radio"></div>
+                    <p class="search">Netmeds pharmacist/doctors will call to confirm medicines</p>
+                </div>
+                    <div><button type="button">CONTINUE</button> </div>            
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
+<script>
+   
+
+
+const image_input = document.querySelector("#image-input");
+
+image_input.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+
+</script>
