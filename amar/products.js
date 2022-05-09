@@ -1,11 +1,9 @@
 var cats = document.querySelectorAll("#category>ul>li>a")
 
-// console.log(cats)
 
 cats.forEach(function (ele) {
     var dd_content = ele.nextElementSibling
-    // console.log(ele)
-    // console.log(dd_content)
+
     ele.addEventListener("click", function () {
 
         if (dd_content.style.display == "block") {
@@ -73,28 +71,9 @@ var manufacturers = [
     'Pravek Kalp Pvt Ltd'
 ]
 
-// var brands = [
-//     'Reckeweg', 'Dr Willmar Schwabe', 'Adel Pekana',
-//     'Sbl', "Lord's", 'Ldd Bioscience',
-//     'Boiron', 'Haslab', 'Similia',
-//     "Dr.John's", 'Bjain', 'Dr.Willmar Schwabe',
-//     'Wheezal', 'Hapdco', 'Healwell',
-//     'Doliosis', 'Allen', 'Dr.Raj',
-//     'Renovision', 'Medilife', 'Nipco',
-//     'Medilexic', 'Bahola', "Bakson'S",
-//     'Hapro', 'New Life', 'Powell',
-//     'Flower Cure', 'Medisynth', 'Fourrts',
-//     'Bhandari', 'Vashisht', 'Hering Pharma',
-//     'Adven', 'Bioforce', "American's",
-//     'Nikir', 'Biohome', 'Homelab',
-//     'Sava Herbals', 'Cipzer', 'Le-Vanza',
-//     'Santi', 'Baidyanath', 'Dr. Willmar Schwabe',
-//     'Alcoban', 'Bhargava', 'Natel',
-//     'Navgrah'
-// ]
+
 
 display_manu(manufacturers)
-// display_brand(brands)
 
 
 function display_manu(data) {
@@ -117,26 +96,12 @@ function display_manu(data) {
     })
 }
 
-// function display_brand(data) {
-//     var i = 0;
-//     data.forEach(function (ele) {
-//         var input = document.createElement("input")
-//         input.setAttribute("id", i)
-//         input.setAttribute("type", "checkbox")
-//         input.setAttribute("class","bcheck")
-//         var label = document.createElement("label")
-//         label.setAttribute("for", i)
-//         label.innerText = ele
-//         i++;
 
-//         var div = document.createElement("div")
-//         div.setAttribute("id", "checkbox")
-//         div.append(input, label)
 
-//         document.querySelector("#brand-names").append(div)
-//     })
 
-// }
+
+
+
 
 var allProd = [
     {
@@ -144,56 +109,72 @@ var allProd = [
         "product_name": "SBL Dibonil Liquid 30 ml",
         "manufacturer": "Mkt: SBL Pvt. Ltd.",
         "price_box": "Rs. 115.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 115
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/826075/dr_reckeweg_r73_spondarthrin_drops_22_ml_0_0.jpg",
         "product_name": "Dr. Reckeweg R73 Spondarthrin Drops 22 ml",
         "manufacturer": "Mkt: Dr. Roshanlal Aggarwal & Sons P. Ltd",
         "price_box": "Rs. 250.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 250
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/826136/dr_reckeweg_r9_jutussin_drops_22_ml_0.jpg",
         "product_name": "Dr. Reckeweg R9 Jutussin Drops 22 ml",
         "manufacturer": "Mkt: Dr. Roshanlal Aggarwal & Sons P. Ltd",
         "price_box": "Rs. 250.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 250
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/821954/sbl_b_trim_drops_30_ml_0.jpg",
         "product_name": "SBL B-TRIM DROPS 30 ml",
         "manufacturer": "Mkt: SBL Pvt. Ltd.",
         "price_box": "Rs. 165.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 165
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/821945/sbl_scalptone_tablet_25_gm_0.jpg",
         "product_name": "SBL Scalptone Tablet 25 gm",
         "manufacturer": "Mkt: SBL Pvt. Ltd.",
         "price_box": "Rs. 140.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 140
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/821951/sbl_vertefine_drops_30_ml_0.jpg",
         "product_name": "SBL Vertefine Drops 30 ml",
         "manufacturer": "Mkt: SBL Pvt. Ltd.",
         "price_box": "Rs. 110.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 110
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/821943/sbl_rite_hite_tablet_25_gm_0.jpg",
         "product_name": "SBL Rite-Hite Tablet 25 gm",
         "manufacturer": "Mkt: SBL Pvt. Ltd.",
         "price_box": "Rs. 140.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 140
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/826105/dr_reckeweg_r42_haemovenin_drops_22_ml_0.jpg",
         "product_name": "Dr. Reckeweg R42 Haemovenin Drops 22 ml",
         "manufacturer": "Mkt: Dr. Roshanlal Aggarwal & Sons P. Ltd",
         "price_box": "Rs. 250.00",
-        "category": "Homeopathy"
+        "category": "Homeopathy",
+        "strikedoffprice": 1000,
+        "price": 250
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/15917/dabur_pudin_hara_pearls_capsule_10_s_0.jpg",
@@ -202,7 +183,9 @@ var allProd = [
         "price_box": "Rs. 20.00",
         "save_badge": "",
         "price": "",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 20
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/341494/liv_52_tablet_100_s_0.jpg",
@@ -211,7 +194,9 @@ var allProd = [
         "price_box": "Rs. 101.40",
         "save_badge": "22% OFF",
         "price": "Rs. 130.00",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 130
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/390287/galact_granules_200gm_0.jpg",
@@ -220,7 +205,9 @@ var allProd = [
         "price_box": "Rs. 306.80",
         "save_badge": "20% OFF",
         "price": "Rs. 383.50",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 306
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/303384/confido_tablet_60_s_0.jpg",
@@ -229,7 +216,9 @@ var allProd = [
         "price_box": "Rs. 137.95",
         "save_badge": "11% OFF",
         "price": "Rs. 155.00",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 137
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/104243/liv_52_hb_capsule_10s_0_0.jpg",
@@ -238,7 +227,9 @@ var allProd = [
         "price_box": "Rs. 124.60",
         "save_badge": "11% OFF",
         "price": "Rs. 140.00",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 140
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/359873/septilin_tablet_60_s_0.jpg",
@@ -247,7 +238,9 @@ var allProd = [
         "price_box": "Rs. 135.30",
         "save_badge": "18% OFF",
         "price": "Rs. 165.00",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 165
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/12749/dabur_chyawanprash_awaleha_500_gm_0.jpg",
@@ -256,7 +249,9 @@ var allProd = [
         "price_box": "Rs. 210.00",
         "save_badge": "",
         "price": "",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 210
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/814310/himalaya_wellness_ashvagandha_tablet_60_s_0.jpg",
@@ -265,63 +260,81 @@ var allProd = [
         "price_box": "Rs. 165.00",
         "save_badge": "",
         "price": "",
-        "category": "Ayurvedic"
+        "category": "Ayurvedic",
+        "strikedoffprice": 1000,
+        "price": 165
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/834545/hamdard_safi_syrup_100_ml_0.jpg",
         "product_name": "Hamdard Safi Syrup 100 ml",
         "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
         "price_box": "Rs. 60.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 60
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/834927/hamdard_joshina_syrup_200_ml_0.jpg",
         "product_name": "Hamdard Joshina Syrup 200 ml",
         "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
         "price_box": "Rs. 120.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 120
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/834537/hamdard_sualin_tab_60_s_0.jpg",
         "product_name": "Hamdard Sualin Tab 60's",
         "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
         "price_box": "Rs. 65.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 65
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/834544/hamdard_roghan_badam_shirin_100_ml_0.jpg",
         "product_name": "Hamdard Roghan Badam Shirin Oil 100 ml",
         "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
         "price_box": "Rs. 425.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 425
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/834542/hamdard_roghan_badam_shirin_25_ml_0.jpg",
         "product_name": "Hamdard Roghan Badam Shirin 25 ml",
         "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
         "price_box": "Rs. 115.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 115
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/834324/rex_jawarish_kamooni_125_gm_0.jpg",
         "product_name": "Rex Jawarish Kamooni 125 gm",
         "manufacturer": "Mkt: Rex Remedies Ltd",
         "price_box": "Rs. 85.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 85
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/834543/hamdard_roghan_badam_shirin_50_ml_0.jpg",
         "product_name": "Hamdard Roghan Badam Shirin 50 ml",
         "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
         "price_box": "Rs. 198.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 198
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/316749/hamdard_safi_syrup_500_ml_0.jpg",
         "product_name": "Hamdard Safi Syrup 500 ml",
         "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
         "price_box": "Rs. 220.00",
-        "category": "Unani"
+        "category": "Unani",
+        "strikedoffprice": 1000,
+        "price": 220
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/887242/dr_jrk_dano_anti_dandruff_oil_100_ml_0.jpg",
@@ -330,7 +343,9 @@ var allProd = [
         "price_box": "Rs. 250.00",
         "save_badge": "",
         "price ": "",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 250
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/887254/dr_jrk_pesin_500_mg_tablet_60_s_0.jpg",
@@ -339,7 +354,9 @@ var allProd = [
         "price_box": "Rs. 654.00",
         "save_badge": "",
         "price ": "",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 654
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/851658/skm_kunkumadi_thaila_lepam_15_gm_0.jpg",
@@ -348,7 +365,9 @@ var allProd = [
         "price_box": "Rs. 65.70",
         "save_badge": "10% OFF",
         "price ": "Rs. 73.00",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 73
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/840362/herbodaya_nilavembu_kudineer_chooranam_pack_of_20_x_5_gm_0_1.jpg",
@@ -357,7 +376,9 @@ var allProd = [
         "price_box": "Rs. 180.00",
         "save_badge": "10% OFF",
         "price ": "Rs. 200.00",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 180
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/851644/skm_viigorwin_legiyam_200_gm_0.jpg",
@@ -366,7 +387,9 @@ var allProd = [
         "price_box": "Rs. 468.00",
         "save_badge": "10% OFF",
         "price ": "Rs. 520.00",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 520
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/851652/skm_aswaganthy_legiyam_500_gm_0.jpg",
@@ -375,7 +398,9 @@ var allProd = [
         "price_box": "Rs. 354.60",
         "save_badge": "10% OFF",
         "price ": "Rs. 394.00",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 394
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/851651/skm_aswaganthy_legiyam_200_gm_0.jpg",
@@ -384,7 +409,9 @@ var allProd = [
         "price_box": "Rs. 148.50",
         "save_badge": "10% OFF",
         "price ": "Rs. 165.00",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 148
     },
     {
         "image_src": "https://www.netmeds.com/images/product-v1/150x150/851650/skm_nellikkai_legiyam_200_gm_0.jpg",
@@ -393,7 +420,9 @@ var allProd = [
         "price_box": "Rs. 130.50",
         "save_badge": "10% OFF",
         "price ": "Rs. 145.00",
-        "category": "Siddha"
+        "category": "Siddha",
+        "strikedoffprice": 1000,
+        "price": 130
     }
 ]
 
@@ -429,13 +458,29 @@ function display_prod(data) {
         var cart = document.createElement("button")
         cart.innerText = "ADD TO CART"
         cart.style.cursor = "pointer"
-        cart.addEventListener("click",function(){
-            cartfun(ele)
+        cart.addEventListener("click", function handler() {
             cart.innerText = "ADDED TO CART"
             cart.style.backgroundColor = "#3f6a6b"
-        })
 
-        // console.log(image, name, manufacturer, price, cart)
+            // cart.classList.toggle("remvItem")
+            cartfun(ele)
+            cart.removeEventListener("click", handler)
+            cart.addEventListener("click", function handler2() {
+                cart.innerText = "ADD TO CART"
+                cart.style.backgroundColor = "#24aeb1"
+
+                remvfun(ele)
+                
+
+                cart.removeEventListener("click", handler2)
+                cart.addEventListener("click", handler)
+                alert("Removed from the cart")
+
+
+            })
+
+
+        })
 
         box2.append(image, name, manufacturer, span, price)
         box3.append(cart)
@@ -446,14 +491,35 @@ function display_prod(data) {
     })
 }
 
-var cartArr =JSON.parse(localStorage.getItem("cartData")) || []
+var prCart = document.querySelector("#prods button")
+console.log(prCart)
 
-function cartfun(ele){
+
+
+
+
+
+var cartArr = JSON.parse(localStorage.getItem("cartData")) || []
+
+function cartfun(ele) {
     // console.log(ele)
     cartArr.push(ele)
-    localStorage.setItem("cartData",JSON.stringify(cartArr))
-    
+    localStorage.setItem("cartData", JSON.stringify(cartArr))
+
 }
+
+function remvfun(ele) {
+    var idx = cartArr.indexOf(ele)
+    // console.log(idx)
+    cartArr.splice(idx, 1)
+    console.log(cartArr)
+    localStorage.setItem("cartData", JSON.stringify(cartArr))
+
+}
+
+
+
+
 
 var cat = document.querySelectorAll("#category a+ul>li")
 // console.log(cat)
@@ -485,11 +551,11 @@ man_check.forEach(function (ele) {
 
 function checkboxfun() {
     // console.log(event.target)
-    
+
     if (event.target.checked == true) {
         // console.log(event.target.nextElementSibling.innerText)
         mancheckarr.push(event.target.nextElementSibling.innerText)
-        console.log(mancheckarr)
+        // console.log(mancheckarr)
 
         var manObjarr = allProd.filter(function (el) {
             return mancheckarr.includes(el.manufacturer.slice(5))
@@ -497,7 +563,7 @@ function checkboxfun() {
         display_prod(manObjarr)
         // console.log(manObjarr)
     }
-    
+
 }
 
 
@@ -514,7 +580,7 @@ function checkboxfun() {
 
 // function bcheckboxfun() {
 //     // console.log(event.target)
-    
+
 //     if (event.target.checked == true) {
 //         // console.log(event.target.nextElementSibling.innerText)
 //         brandcheckarr.push(event.target.nextElementSibling.innerText)
@@ -527,16 +593,16 @@ function checkboxfun() {
 //         // display_prod(brandObjarr)
 //         console.log(brandObjarr)
 //     }
-    
+
 // }
 
 var popularity = document.querySelector("#sort-by>button")
 // console.log(popularity)
 popularity.style.cursor = "pointer"
 
-popularity.addEventListener("click",popfun)
+popularity.addEventListener("click", popfun)
 
-function popfun(){
+function popfun() {
     display_prod(allProd)
 }
 
@@ -544,10 +610,10 @@ var htl = document.querySelector("#sort-by>button+button")
 // console.log(htl)
 htl.style.cursor = "pointer"
 
-htl.addEventListener("click",htlfun)
+htl.addEventListener("click", htlfun)
 
-function htlfun(){
-    allProd.sort(function(a,b){
+function htlfun() {
+    allProd.sort(function (a, b) {
         return Number(b.price_box.slice(4)) - Number(a.price_box.slice(4))
     })
     // console.log(allProd)
@@ -558,10 +624,10 @@ var lth = document.querySelector("#sort-by>button+button+button")
 // console.log(lth)
 lth.style.cursor = "pointer"
 
-lth.addEventListener("click",lthfun)
+lth.addEventListener("click", lthfun)
 
-function lthfun(){
-    allProd.sort(function(a,b){
+function lthfun() {
+    allProd.sort(function (a, b) {
         return Number(a.price_box.slice(4)) - Number(b.price_box.slice(4))
     })
     // console.log(allProd)
@@ -572,9 +638,9 @@ function lthfun(){
 
 var btns = document.querySelectorAll("#sort-by button")
 // console.log(btns)
-btns.forEach(function(ele){
-    ele.addEventListener("click",function(){
-        btns.forEach(function(el){
+btns.forEach(function (ele) {
+    ele.addEventListener("click", function () {
+        btns.forEach(function (el) {
             el.classList.remove("active")
         })
         this.classList.add("active")
