@@ -1,0 +1,212 @@
+var mon = JSON.parse(localStorage.getItem("mobile"));
+if (mon !== null) {
+  document.querySelector("#don").innerText = mon;
+}
+var cartArr = JSON.parse(localStorage.getItem("cartData")) || [];
+
+displayCart(cartArr);
+
+function displayCart(cartArr) {
+  var price1 = 0;
+  var discount = 0;
+
+  document.querySelector("#cartdata").innerHTML = "";
+
+  document.querySelector("#MRP").innerText = "₹" + 0;
+  document.querySelector("#netmeddiscount").innerText = "₹" + 0;
+  document.querySelector("#netmed").innerText = "₹" + 0;
+  document.querySelector("#total").innerText = "₹" + 0;
+  document.querySelector("#total1").innerText = "₹" + 0;
+
+  var uniqueCartItems = [];
+  var itemsQuantity = [];
+
+  cartArr.forEach(function (ele) {
+    var flag = false;
+    for (var i = 0; i < uniqueCartItems.length; i++) {
+      var obj = uniqueCartItems[i];
+      if (
+        obj.image_src === ele.image_src &&
+        obj.product_name === ele.product_name &&
+        obj.price === ele.price &&
+        obj.strikedoffprice === ele.strikedoffprice &&
+        obj.manufacturer === ele.manufacturer
+      ) {
+        flag = true;
+        break;
+      }
+    }
+    if (flag) {
+      itemsQuantity[i] = itemsQuantity[i] + 1;
+    } else {
+      uniqueCartItems.push(ele);
+      itemsQuantity.push(1);
+    }
+  });
+
+  document.querySelector("#pdone").addEventListener("click", func);
+
+  function func() {
+    alert(
+      "Congratulations payment done. Your product will get deliever to the mentioned address soon."
+    );
+    window.location.href = "landing.html";
+  }
+
+  uniqueCartItems.forEach(function (elem, index) {
+    var card = document.createElement("div");
+    card.setAttribute("class", "boxCard"); //bag12
+    card.style.display = "flex";
+
+    var card1 = document.createElement("div"); //img
+    card1.setAttribute("class", "boxCard1");
+    // card1.style.width = "100px";
+
+    var image = document.createElement("img");
+    image.setAttribute("src", elem.image_src);
+
+    card1.append(image);
+
+    var card2 = document.createElement("div"); //details      card2
+    card2.setAttribute("class", "boxCard2");
+
+    var details = document.createElement("p"); //details p tag  card2
+    details.innerText = elem.product_name;
+
+    var details1 = document.createElement("p"); //  card2
+    details1.innerText = elem.manufacturer;
+
+    var card3 = document.createElement("div"); //details     //card 2
+    card3.setAttribute("class", "boxCard3");
+    card3.style.display = "flex";
+
+    var card31 = document.createElement("div"); //amount      card3->31 32
+    card31.setAttribute("class", "boxCard31");
+
+    var price = document.createElement("span");
+    price.innerText = "₹" + elem.price;
+
+    var Sprice = document.createElement("span");
+    Sprice.innerText = "₹" + elem.strikedoffprice;
+    price1 = price1 + elem.strikedoffprice * itemsQuantity[index];
+    document.querySelector("#MRP").innerText = "₹" + price1;
+
+    if (elem.strikedoffprice) {
+      var discounted = elem.strikedoffprice - elem.price;
+      discount = discount + itemsQuantity[index] * discounted;
+    }
+    document.querySelector("#netmeddiscount").innerText = "-₹" + discount;
+
+    document.querySelector("#netmed").innerText = "₹" + discount;
+
+    document.querySelector("#total").innerText = "₹" + (price1 - discount);
+    document.querySelector("#total1").innerText = "₹" + (price1 - discount);
+
+    var Delievery = document.createElement("p");
+    Delievery.innerText = "Delivery between May 8 6PM-May 9 10PM";
+
+    card31.append(price, Sprice, Delievery);
+
+    var card32 = document.createElement("div");
+    card32.setAttribute("class", "boxCard32");
+
+    var quantityIncre = document.createElement("button");
+    quantityIncre.setAttribute("class", "cc1");
+    quantityIncre.innerText = "ADD";
+    quantityIncre.addEventListener("click", function () {
+      addItems(elem);
+    });
+    var quantityDecre = document.createElement("button");
+    quantityDecre.innerText = "DEL";
+    quantityDecre.setAttribute("class", "cc2");
+    quantityDecre.addEventListener("click", function () {
+      delItems(elem, index);
+    });
+
+    var quantityValue = document.createElement("span");
+
+    quantityValue.innerText = " QTY:" + itemsQuantity[index];
+
+    var card321 = document.createElement("div");
+    card321.setAttribute("class", "boxCard321");
+    card321.style.display = "flex";
+
+    var remove = document.createElement("button");
+    remove.innerText = "REMOVE";
+    remove.addEventListener("click", function () {
+      removeFromCart(elem, index);
+    });
+
+    var later = document.createElement("button");
+    later.innerText = "SAVE FOR LATER";
+    later.addEventListener("click", function () {
+      Saveforlater(elem, index);
+    });
+
+    var hr = document.createElement("hr");
+    hr.setAttribute("class", "hr");
+    hr.style.color = "blue";
+
+    card321.append(remove, later);
+
+    card32.append(quantityValue, quantityIncre, quantityDecre, card321);
+
+    card3.append(card31, card32);
+    card2.append(details, details1, card3, hr);
+    // card1.append(hr)
+    card.append(card1, card2);
+    document.querySelector("#cartdata").append(card);
+  });
+}
+
+function addItems(elem) {
+  cartArr.push(elem);
+  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  displayCart(cartArr);
+  console.log(cartArr);
+}
+
+function delItems(elem, index) {
+  for (var i = cartArr.length - 1; i >= 0; i--) {
+    var ele = cartArr[i];
+    if (
+      ele.img === elem.img &&
+      ele.name === elem.name &&
+      ele.price === elem.price &&
+      ele.strikedoffprice === elem.strikedoffprice
+    ) {
+      break;
+    }
+  }
+  cartArr.splice(i, 1);
+  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  displayCart(cartArr);
+  console.log(cartArr);
+}
+
+function removeFromCart(elem, index) {
+  event.target.parentNode.remove();
+  var newCartArr = [];
+  cartArr.forEach(function (ele) {
+    if (
+      ele.image_url !== elem.image_url ||
+      ele.name !== elem.name ||
+      ele.price !== elem.price ||
+      ele.strikedoffprice !== elem.strikedoffprice
+    ) {
+      newCartArr.push(ele);
+    }
+  });
+  cartArr = newCartArr;
+  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  displayCart(cartArr);
+}
+
+var bbc = document.querySelector("#promo");
+bbc.addEventListener("click", (event) => {
+  if (bbc.open) {
+    document
+      .querySelector(".suraj")
+      .className.replace("fa fa-circle", "fa fa-check-circle");
+  }
+});
