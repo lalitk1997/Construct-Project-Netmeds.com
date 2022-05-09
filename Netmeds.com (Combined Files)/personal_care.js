@@ -217,3 +217,13 @@ all2_Product.forEach(function (pro2){
    document.querySelector(".product2").append(all2);
 
 });
+
+  var monkey = JSON.parse(localStorage.getItem("mobile"));
+if (monkey !== null) {
+  document.querySelector("#donkey").innerText = monkey;
+}
+
+document.querySelector(".productBox").addEventListener("click", myProductPg);
+function myProductPg(){
+   window.location.href = "products.html";
+}

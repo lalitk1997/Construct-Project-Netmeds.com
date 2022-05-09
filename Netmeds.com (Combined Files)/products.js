@@ -646,3 +646,7 @@ btns.forEach(function (ele) {
         this.classList.add("active")
     })
 })
+var monkey = JSON.parse(localStorage.getItem("mobile"));
+if (monkey !== null) {
+  document.querySelector("#donkey").innerText = monkey;
+}

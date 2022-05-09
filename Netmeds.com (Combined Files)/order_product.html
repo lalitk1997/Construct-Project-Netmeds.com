@@ -25,7 +25,7 @@
         <img src="./Image/nav-icon-2.png" alt="" />
         <p>Cart</p>
         <img src="./Image/nav-icon-3.png" alt="" />
-        <p>User</p>
+        <p id="donkey">User</p>
       </div>
     </div>
    
@@ -104,3 +104,10 @@
     </div>
 </body>
 </html>
+<script>
+  var monkey = JSON.parse(localStorage.getItem("mobile"));
+if (monkey !== null) {
+  document.querySelector("#donkey").innerText = monkey;
+}
+
+</script>

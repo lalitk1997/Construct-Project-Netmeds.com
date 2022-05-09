@@ -441,3 +441,7 @@ proName.innerText=popro.poproName
 box.append(proImage,proName);
 document.querySelector(".popular_Product2").append(box)
 });
+  var monkey = JSON.parse(localStorage.getItem("mobile"));
+if (monkey !== null) {
+  document.querySelector("#donkey").innerText = monkey;
+}
