@@ -1,3 +1,50 @@
+.slider-box {
+  width: 95%;
+  margin: auto;
+  /* max-height: 50vh; */
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 60px auto;
+  border-radius: 10px;
+  margin-bottom: -100px;
+}
+
+#slider {
+  width: 100%;
+  height: 80%;
+  display: inline-flex;
+  transition: 0.8s;
+}
+
+#slider img {
+  width: 100%;
+}
+
+.indicators {
+  position: absolute;
+  left: 50%;
+  bottom: 120px;
+  /* transform: translateX(-50%); */
+  /* margin-top: 100px; */
+  /* border: 1px solid black; */
+  margin-bottom:-30px;
+  
+}
+
+
+.indicators span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(82, 73, 73, 0.5);
+  cursor: pointer;
+}
+
+.active {
+  background: #ffff !important;
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -14,12 +61,14 @@
   height: 50%;
   width: 95%;
   margin: auto;
+  
 }
 #nav-option {
   height: 50%;
 }
 #nav-search-bar > img {
   padding-top: 0.5%;
+  border: 1px solid red;
 }
 #nav-search-bar > input {
   height: 65%;
@@ -29,6 +78,8 @@
   margin-top: 12px;
   margin-left: 1%;
 }
+
+
 #nav-bar > #nav-search-bar > #btn {
   margin: auto;
 }
@@ -43,6 +94,7 @@
   margin-left: -20px;
   margin-top: +3px;
 }
+
 #nav-search-bar > #btn > img {
   margin-right: 25px;
 }
@@ -93,104 +145,108 @@
   margin-left: 1%;
 }
 /* Insert Here */
-.explore{
+.explore {
   width: 100%;
   /* border: 1px solid black; */
   background-color: #32aeb1;
-
 }
-.nextExplor{
-width: 75%;
-margin:auto;
-/* border: 1px solid red; */
+.nextExplor {
+  width: 75%;
+  margin: auto;
+  /* border: 1px solid red; */
 }
-.tab-1{
- 
-cursor: pointer;
+.tab-1 {
+  cursor: pointer;
   display: flex;
   padding: 15px;
   justify-content: space-between;
   position: relative;
   list-style: none;
   color: white;
-  
 }
 
-.tab-1 li:hover>.innerTab{
-display: block;
-width: auto;
+.tab-1 li:hover > .innerTab {
+  display: block;
+  width: auto;
+  margin-top: 3px;
 }
 .innerTab {
   background-color: white;
   margin-top: 20px;
   padding: 10px 15px 10px 10px;
   position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   list-style-type: none;
   line-height: 30px;
-display: none;
+  display: none;
 }
-a{ 
+a {
   color: black;
   text-decoration: none;
 }
-a:hover{ 
+a:hover {
   color: #32aeb1;
 }
 
-.main-nav:hover{
-color: white;
-}
-.main-nav{
+.main-nav:hover {
   color: white;
 }
-.main-test{
+.main-nav {
   color: white;
 }
-.main-test:hover{
+.main-test {
+  color: white;
+}
+.main-test:hover {
   color: white;
 }
 
-.health{
-background: url(https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/health-library.svg) 0 0 no-repeat;
-background-size: 40px;
-  padding-left: 48px;
-  padding: 12px 15px 15px 47px;
-}
-.beauty{
-  background: url( https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg) 0 0 no-repeat;
+.health {
+  background: url(https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/health-library.svg)
+    0 0 no-repeat;
   background-size: 40px;
   padding-left: 48px;
   padding: 12px 15px 15px 47px;
 }
-.medicine{
-  background: url(https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/medicine.svg) 0 0 no-repeat;
+.beauty {
+  background: url(https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg)
+    0 0 no-repeat;
   background-size: 40px;
   padding-left: 48px;
-  padding: 12px 15px 15px 47px; 
+  padding: 12px 15px 15px 47px;
 }
-.wellness{
-  background: url(https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg) 0 0 no-repeat;
+.medicine {
+  background: url(https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/medicine.svg)
+    0 0 no-repeat;
+  background-size: 40px;
+  padding-left: 48px;
+  padding: 12px 15px 15px 47px;
+}
+.wellness {
+  background: url(https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg)
+    0 0 no-repeat;
   background-size: 40px;
   padding-left: 48px;
   padding: 15px 15px 15px 47px;
 }
-.lab{
-  background: url(https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg) 0 0 no-repeat;
+.lab {
+  background: url(https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg)
+    0 0 no-repeat;
   background-size: 40px;
   padding-left: 48px;
   padding: 15px 15px 15px 47px;
 }
 
-.innerTab li:hover{
+.innerTab li:hover {
   background-color: rgba(241, 241, 241, 0.63);
 }
 * {
-margin: 0%;
-padding: 0%;
-/* background-color: #f3f7fb; */
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  /* background-color: #f3f7fb; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #landing-jumbotron {
   width: 95%;
@@ -249,12 +305,22 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 #broad-category-payment-offers {
   width: 95%;
   margin: auto;
   display: flex;
   /* background-color: white; */
 }
+#broad-category-payment-offers-head{
+  display: flex;
+  justify-content: space-between;
+}
+#broad-category-payment-offers-head > a > p{
+  color: red;
+  margin-top: 10px;
+  cursor: pointer;
+} 
 #broad-category-payment-offers > div {
   display: flex;
   width: 30%;
@@ -431,6 +497,13 @@ hr + hr {
   width: 95%;
   margin: auto;
   margin-top: 20px;
+  /* display: flex; */
+}
+#shop-by-category > a> p{
+  cursor: pointer;
+  text-align: end;
+  margin-top: -30px;
+  color: red;
 }
 #append-div-1 {
   width: 95%;
@@ -945,7 +1018,23 @@ hr + hr {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-#medicine-refill > #btn-medicine-refill{
-    margin-left: 500px;
-    margin-top: 30px;
+#medicine-refill > #btn-medicine-refill {
+  margin-left: 500px;
+  margin-top: 30px;
+}
+.innerTab > li{
+  font-size: small;
+  margin-top: -5px;
+}
+#upload > a{
+  text-decoration: none;
+  color: white;
+}
+#cart > a{
+  text-decoration: none;
+  color: white;
+}
+#signup >a{
+  text-decoration: none;
+  color: white;
 }

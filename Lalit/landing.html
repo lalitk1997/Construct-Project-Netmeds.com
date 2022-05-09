@@ -10,19 +10,20 @@
   <body>
     <div id="nav-bar">
       <div id="nav-search-bar">
-        <img src="./Image/Netmeds_Icon.png" alt="" />
-        <input
-          type="text"
-          placeholder="     Search for medicine & wellness products..."
-        />
+
+        <a href="landing.html"><img src="./Image/Netmeds_Icon.png" alt="" /></a>
+        
+        <input type="text" placeholder="     Search for medicine & wellness products..." />
+        
         <div id="btn">
-          <img src="./Image/nav-icon-1.png" alt="" />
-          <p>Upload</p>
-          <img src="./Image/nav-icon-2.png" alt="" />
-          <p>Cart</p>
-          <img src="./Image/nav-icon-3.png" alt="" />
-          <p>User</p>
+          <img src="./Image/nav-icon-1.png" alt="" class="upload1" />
+          <p class="upload"> Upload</p>
+          <img src="./Image/nav-icon-2.png" alt="" class="cart1" />
+          <p class="cart">Cart</p>
+          <img src="./Image/nav-icon-3.png" alt="" class="signup1" />
+          <p class="signup">Sign In / Sign Up</p>
         </div>
+
       </div>
       <div class="explore" >
         <div class="nextExplor">
@@ -30,7 +31,7 @@
             <li class="medicine">Medicine &#9660;
                 <ul class="innerTab">
                     <li><a href="All_medicine.html"> All medicine</a></li>
-                    <li><a href="order_product.html">Priviously Oreder Product</a></li>
+                    <li><a href="order_product.html">Previously Ordered Product</a></li>
                 </ul>
             </li>
 
@@ -43,19 +44,19 @@
                 <ul class="innerTab">
                     <li><a href="personal_care.html">Personal Care</a></li>
                     <li><a href="wellness.html">Make-Up</a></li>
-                    <li><a href="wellness.html">Hair</a></li>
+                    <!-- <li><a href="wellness.html">Hair</a></li>
                     <li><a href="wellness.html">Skin Care</a></li>
                     <li><a href="All_medicine.html">Tolls & Appliances</a></li>
                     <li><a href="wellness.html">Mom & Baby</a></li>
                     <li><a href="order_product.html">Fragrance</a></li>
-                    <li><a href="personal_care.html">Man's Grooming</a></li>
+                    <li><a href="personal_care.html">Man's Grooming</a></li> -->
                 </ul>
             </li>
             <li class="health" >Health Corner &#9660;
                 <ul class="innerTab">
                     <li><a href="All_medicine.html">Health Library</a></li>
                     <li><a href="wellness.html">Patients A Like</a></li>
-                    <li><a href="order_product.html">Corona Awerness</a></li>
+                    <!-- <li><a href="order_product.html">Corona Awerness</a></li> -->
                 </ul>
             </li>
 
@@ -103,10 +104,24 @@
         <p>Treatments</p>
       </div>
     </div>
-    <div id="landing-jumbotron">
-      <div id="moving-templates">
-        <img src="Image/jumbotron.png" alt="" />
+    <div class="slider-box">
+      <div id="slider">
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1651863332_Web_Home_Kareena_Banner.jpg" alt="" />
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1651909735_WEb_Home_Bannerderr.jpg" alt="" />
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1651498134_sdvbnm.jpg" alt="" />
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1651338093_Web_Home89.jpg" alt="" />
       </div>
+      <div class="indicators">
+        <span id="btn1" class="active"></span>
+        <span id="btn2"></span>
+        <span id="btn3"></span>
+        <span id="btn4"></span>
+      </div>
+    </div>
+    <div id="landing-jumbotron">
+      <!-- <div id="moving-templates">
+        <img src="Image/jumbotron.png" alt="" />
+      </div> -->
       <div id="broad-category">
         <div>
           <img
@@ -154,6 +169,8 @@
     </div>
     <div id="broad-category-payment-offers-head">
       <h2>Payment Partner Offers</h2>
+      <a href="coupen.html"><p>View All ></p></a>
+      <!-- <div><h2>Payment Partner Offers</h2>             <span>View All ></span></div> -->
     </div>
     <div id="broad-category-payment-offers">
       <div>
@@ -267,6 +284,7 @@
     </div>
     <div id="shop-by-category">
         <h2>Shop by Category</h2>
+        <a href="products.html"><p>View All ></p></a>
         <div id="append-div-1">
             <!-- append here for shop-by-category -->
         </div>

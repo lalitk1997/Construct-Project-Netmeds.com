@@ -338,3 +338,124 @@ display6(personal_care);
 display7(mens_grooming);
 display8(health_concerns);
 display9(advice_from_health_experts);
+
+
+var slide = document.getElementById("slider");
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var btn4 = document.getElementById("btn4");
+
+btn1.onclick = function () {
+  slide.style.transform = "translateX(0px)";
+  btn1.classList.add("active");
+  btn2.classList.remove("active");
+  btn3.classList.remove("active");
+  btn4.classList.remive("active");
+};
+btn2.onclick = function () {
+  slide.style.transform = "translateX(-100%)";
+  btn1.classList.remove("active");
+  btn2.classList.add("active");
+  btn3.classList.remove("active");
+  btn4.classList.remove("active");
+};
+btn3.onclick = function () {
+  slide.style.transform = "translateX(-200%)";
+  btn1.classList.remove("active");
+  btn2.classList.remove("active");
+  btn3.classList.add("active");
+  btn4.classList.remove("active");
+};
+btn4.onclick = function () {
+  slide.style.transform = "translateX(-300%)";
+  btn1.classList.remove("active");
+  btn2.classList.remove("active");
+  btn3.classList.remove("active");
+  btn4.classList.add("active");
+};
+
+
+document.querySelector(".cart").addEventListener("click",myfunc)
+var f=JSON.parse(localStorage.getItem("userData"))
+function myfunc(){
+    if(f==null)
+    {
+      window.location.href="emptycart.html"
+    }
+    else{
+      window.location.href="cart.html"
+    }
+}
+
+
+document.querySelector(".upload").addEventListener("click",myfunc2)
+var a=JSON.parse(localStorage.getItem("mobile"))
+function myfunc2(){
+    if(a==null)
+    {
+        window.location.href="signUp.html"
+    }else {
+        window.location.href="upload.html"
+    }
+}
+
+
+document.querySelector(".signup").addEventListener("click",myfunc3)
+var a=JSON.parse(localStorage.getItem("mobile"))
+function myfunc3(){
+    if(a==null)
+    {
+        window.location.href="signUp.html"
+    }else {
+        window.location.href="signIn.html"
+    }
+}
+
+
+document.querySelector(".cart1").addEventListener("click",myfunc)
+var f=JSON.parse(localStorage.getItem("userData"))
+function myfunc(){
+    if(f==null)
+    {
+      window.location.href="emptycart.html"
+    }
+    else{
+      window.location.href="cart.html"
+    }
+}
+
+
+document.querySelector(".upload1").addEventListener("click",myfunc2)
+var a=JSON.parse(localStorage.getItem("mobile"))
+function myfunc2(){
+    if(a==null)
+    {
+        window.location.href="signUp.html"
+    }else {
+        window.location.href="upload.html"
+    }
+}
+
+
+document.querySelector(".signup1").addEventListener("click",myfunc3)
+var a=JSON.parse(localStorage.getItem("mobile"))
+function myfunc3(){
+    if(a==null)
+    {
+        window.location.href="signUp.html"
+    }else {
+        window.location.href="signIn.html"
+    }
+}
+
+var monkey=JSON.parse(localStorage.getItem("otp"))
+var a=JSON.parse(localStorage.getItem("mobile"))
+
+if (monkey!==null)
+{
+   document.querySelector(".signup").innerText=a;
+}
+
+
+
