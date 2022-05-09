@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link  href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="cart2.css">
+    <title>Netmeds cart</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <a href="landing.html"
+          ><img
+            _ngcontent-rls-c3=""
+            alt="Netmeds.com, India ki Online Pharmacy"
+            class="img"
+            src="https://www.netmeds.com/msassets/home-logo-netmeds-new.svg"
+        /></a>
+      </div>
+      <div>
+        <div id="s1"><img src="./Image/55.JPG" alt="" /></div>
+        <div id="s2"><p>Search for medicines and wellness products...</p></div>
+        <div id="s3"><img src="./Image/11.JPG" alt="" /></div>
+      </div>
+      <div>
+        <a href="upload.html"><p>UPLOAD</p></a>
+      </div>
+      <div>
+        <a href="cart.html"
+          ><img
+            src="https://www.netmeds.com/msassets/images/icons/shopping_cart_white.svg"
+            alt=""
+        /></a>
+      </div>
+      <div>
+        <span
+          ><img
+            src="https://www.netmeds.com/msassets/images/icons/profile.svg"
+            alt=""
+        /></span>
+        <span id="don">USER</span>
+      </div>
+    </div>
+
+    <div id="container"><img src="Image/payment2.JPG" alt="" /></div>
+
+    <div id="bag">
+      <div id="bag1">
+        <!-- <div id="bag11">
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1651276627_Cart_569x90.jpg"
+            alt=""
+          />
+        </div> -->
+        <div id="bag12">
+          <p>PRODUCTS</p>
+
+          <div id="cartdata"></div>
+
+          <div class="addmore">
+            <a href="products.html"><button>ADD MORE ITEMS</button></a>
+            <a href="products.html"><button>+</button></a>
+          </div>
+        </div>
+
+        <div id="bag13">
+          <p>DELIEVERY ADDRESS</p>
+          <input type="textarea" />
+        </div>
+
+        <div id="bag13">
+          <p>CUSTOMER NOTES</p>
+          <input type="textarea" />
+        </div>
+
+        <!-- <div id="bag14">
+          <div>
+            <span> SAVED FOR LATER</span>
+          <p>No items in save for later</p>
+          </div>
+        </div> -->
+      </div>
+
+      <div id="bag2">
+        <!-- <div id="bag21">
+          <div>
+            <div>
+              <img
+                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFduDRI8Ggo8ZhD6RSM7gX9Nt80oQxyHkYPiHK0jXfeP6AKgBl"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <p>Become Netmeds First Member</p>
+            <p>
+              Join membership to save much more! Exclusive offers designed for
+              you
+            </p>
+          </div>
+          <div>
+            <div>
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div id="bag22">
+          <p>APPLY PROMOCODE / NMS SUPERCASH</p>
+          <details id="promo" >
+            <summary>
+             <span>Apply Promo Code</span>
+              <p>Get flat discount! Vouchers applicable in payment options.</p>
+            </summary>
+            <div>
+              <p id="abcd">Promo code</p>
+              <input
+                type="text"
+                placeholder="Have a promocode? Enter here"
+                id="abc"
+              />
+            </div>
+
+            <div id="dotbox">
+              <div><input type="checkbox" id="b1"/> FULL100</div>
+              <p id="coupon">
+                Get flat 25% off on meds + 100% NMS SuperCash on your First meds
+                order. No minimum order value.
+              </p>
+            </div>
+
+            <div id="dotbox">
+              <div><input type="checkbox" id="b2"/> DUO100</div>
+              <p id="coupon">
+                Get flat 20% off on meds + 100% NMS SuperCash on your meds
+                order. Minimum order value: Rs. 999.
+              </p>
+            </div>
+
+            <div id="dotbox">
+              <div><input type="checkbox" id="b3" /> BOWL100</div>
+              <p id="coupon">
+                Get flat 15% off on meds + 100% NMS SuperCash on your meds
+                order. No minimum order value.
+              </p>
+            </div>
+
+            <div id="coupon1">
+              <span id="Note">NOTE:</span> Some medicines, including eyewear,
+              are eligible for ONLY up to 10% discount on applying any coupon
+              code.
+            </div>
+          </details>
+        </div> -->
+        <div id="bag23">
+          <div id="pding">
+            <div>
+              <h4>PAYMENT DETAILS</h4>
+            </div>
+
+            <div>
+              <div id="price">
+                <span>MRP Total</span> <span id="MRP">₹ 0</span>
+              </div>
+              <div id="price">
+                <span>Netmeds Discount</span>
+                <span id="netmeddiscount">- Rs.84.89</span>
+              </div>
+              <div id="price">
+                <span>Total Amount *</span> <span id="total">Rs.1,459.11</span>
+              </div>
+            </div>
+
+            <div id="saving">TOTAL SAVINGS <span id="netmed">₹.0</span></div>
+
+            <div id="amount">
+              <div>
+                <p>TOTAL AMOUNT</p>
+                <p id="total1">Rs.1,459.11</p>
+              </div>
+              <div>
+                <button id="pdone">PAY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bag24">
+          <div>
+            <p>
+              IMPORTANT UPDATE : Due to the current Covid 19 situation, we
+              cannot commit to our mentioned delivery dates. We are working hard
+              to meet the unprecedented demand and we thank you for your
+              patience.
+            </p>
+            <p>
+              Netmeds is a technology platform to facilitate transaction of
+              business. The products and services are offered for sale by the
+              sellers. The user authorizes the delivery personnel to be his
+              agent for delivery of the goods. For details read
+              <span>Terms & Conditions.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="cart2.js"></script>
