@@ -1,0 +1,329 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(235, 235, 235, 0.849);
+}
+
+
+/* ------------------------NAVBAR-------------------------- */ 
+.explore{
+  width: 100%;
+  
+  background-color: #32aeb1;
+
+}
+.nextExplor{
+width: 75%;
+margin:auto;
+/* border: 1px solid red; */
+}
+.tab-1{
+ background-color: #32aeb1;
+cursor: pointer;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  position: relative;
+  list-style: none;
+  color: white;
+  
+}
+
+.tab-1 li:hover>.innerTab{
+display: block;
+width: auto;
+}
+.innerTab {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px 15px 10px 10px;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  list-style-type: none;
+  line-height: 30px;
+display: none;
+}
+.innerTab a{ 
+background-color: white;
+  color: black;
+  text-decoration: none;
+}
+a:hover{ 
+  background-color: rgba(245, 244, 244, 0.76);
+  color: #32aeb1;
+}
+
+.main-nav:hover{
+color: white;
+}
+.wellness a{
+background-color: #32aeb1;
+  color: white;
+  text-decoration: none;
+}
+.lab a{
+background-color: #32aeb1;
+  color: white;
+text-decoration: none;
+}
+.main-test:hover{
+  color: white;
+}
+.innerTab li{
+background-color: white;
+}
+.health{
+background: url(https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/health-library.svg) 0 0 no-repeat;
+background-size: 40px;
+  padding-left: 48px;
+  padding: 12px 15px 15px 47px;
+}
+.beauty{
+  background: url( https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg) 0 0 no-repeat;
+  background-size: 40px;
+  padding-left: 48px;
+  padding: 12px 15px 15px 47px;
+}
+.medicine{
+  background: url(https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/medicine.svg) 0 0 no-repeat;
+  background-size: 40px;
+  padding-left: 48px;
+  padding: 12px 15px 15px 47px; 
+}
+.wellness{
+  background: url(https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg) 0 0 no-repeat;
+  background-size: 40px;
+  padding-left: 48px;
+  padding: 15px 15px 15px 47px;
+}
+.lab{
+  background: url(https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg) 0 0 no-repeat;
+  background-size: 40px;
+  padding-left: 48px;
+  padding: 15px 15px 15px 47px;
+}
+
+.innerTab li:hover{
+  background-color: rgba(241, 241, 241, 0.63);
+}
+
+* {
+margin: 0%;
+padding: 0%;
+/* background-color: #f3f7fb; */
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#nav-bar {
+height: 150px;
+background-color: #32aeb1;
+}
+#nav-search-bar {
+background-color: #32aeb1;
+display: flex;
+height: 50%;
+width: 95%;
+margin: auto;
+}
+#nav-option {
+height: 50%;
+}
+#nav-search-bar a{
+background-color: #32aeb1;
+
+}
+#nav-search-bar>img {
+padding-top: 0.5%;
+}
+#nav-search-bar > input {
+background-color: white;
+height: 65%;
+width: 55%;
+border: #32aeb1;
+border-radius: 5px;
+margin-top: 12px;
+margin-left: 1%;
+}
+#nav-bar > #nav-search-bar > #btn {
+background-color: #32aeb1;
+margin: auto;
+}
+#nav-search-bar > #btn {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+}
+#nav-search-bar > #btn > p {
+display: inline;
+background-color: #32aeb1;
+color: white;
+margin-left: -20px;
+margin-top: +3px;
+}
+#nav-search-bar > #btn > img {
+margin-right: 25px;
+}
+#nav-search-bar > #btn :nth-child(5) {
+margin-left: -20px;
+}
+#nav-search-bar > #btn :nth-child(6) {
+margin-left: -40px;
+}
+#nav-option {
+width: 80%;
+margin: auto;
+margin-top: 10px;
+display: flex;
+}
+#nav-option > div {
+width: 20%;
+}
+#nav-option > div > img {
+position: absolute;
+height: 50px;
+}
+#nav-option > div > select {
+position: relative;
+border: #32aeb1;
+background-color: #32aeb1;
+color: white;
+font-size: 20px;
+margin-top: 10px;
+margin-left: 70px;
+}
+#nav-option > div > p {
+position: relative;
+border: #32aeb1;
+background-color: #32aeb1;
+color: white;
+font-size: 20px;
+margin-top: 10px;
+margin-left: 70px;
+}
+#nav-p-options {
+
+width: 80%;
+margin: auto;
+margin-top: 5px;
+}
+#nav-p-options > p {
+background-color: rgba(235, 235, 235, 0.849);
+display: inline;
+margin-left: 1%;
+}
+
+/* ----------------------------------------NAVBAR CLOSE----------------------------- */
+.head{
+margin-top: 15%;
+}
+.head>h1{
+margin-left: 10%;
+/* margin-top: 100px; */
+color: #32aeb1;
+/* border: 1px solid black; */
+}
+.head>p{
+margin-left: 10%;
+/* margin-top: -20px; */
+
+color: #32aeb1;
+font-style: italic;
+}
+
+.nav-Letter{
+
+width: 80%;
+margin: auto;
+background-color: white;
+border-top: #ddd solid 1px;
+border-bottom: #ddd solid 1px;
+display: grid;
+padding: 4px;
+font-size: 22px;
+/* padding: 10px; */
+grid-template-columns: repeat(28,1fr);
+grid-template-rows: repeat(1,auto);
+margin-top: 40px;
+}
+
+.nav-Letter>a{
+background-color: white;
+text-decoration: none;
+}
+.Letter-list{
+display: flex;
+/* border: 1px solid red; */
+height: auto;
+width: 80%;
+margin: auto;
+gap:40px;
+}
+.First_let{
+display: flex;
+font-size: 35px;
+}
+.Letter-list>div>p>a{
+color: black;
+text-decoration: none;
+font-size: 13px;
+
+}
+.box{
+width: auto;
+margin-left: 20px;
+/* border: 1px solid blue; */
+}
+
+.nav-Letter a:hover{
+color: #32aeb1;
+}
+.nav-Letter>a{
+color: black;
+}
+.nav-Letter a:nth-child(10){
+color: rgba(128, 128, 128, 0.589);
+cursor: default;
+
+}
+.nav-Letter a:nth-child(18){
+color: rgba(128, 128, 128, 0.589);
+cursor: default;
+}
+.nav-Letter a:nth-child(24){
+color: rgba(128, 128, 128, 0.589);
+cursor: default;
+}
+.nav-Letter a:nth-child(25){
+color: rgba(128, 128, 128, 0.589);
+cursor: default;
+}
+.nav-Letter a:nth-child(26){
+color: rgba(128, 128, 128, 0.589);
+cursor: default;
+}
+.nav-Letter a:nth-child(27){
+color: rgba(128, 128, 128, 0.589);
+cursor: default;
+}
+
+.nav-Letter a:nth-child(28){
+color: #32aeb1;
+}
+.homeTab>p{
+    color:#0b7e81!important;
+text-decoration: none;
+margin-left: 11%;
+margin-bottom: -194px;
+margin-top: 70px;
+/* border: 1px solid black; */
+font-size: 12px;
+}
+.sameTab>p{
+color:#0b7e81!important;
+margin-left: 179px;
+margin-bottom: -15%;
+margin-top: 179px;
+font-size: 12px;
+
+}
+a{
+text-decoration: none;
+}

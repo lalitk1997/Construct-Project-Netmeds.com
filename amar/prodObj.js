@@ -1,0 +1,368 @@
+var Manufacturers = [
+    'Dr. Roshanlal Aggarwal & Sons P. Ltd',
+    'Dr.Willmar Schwabe India Pvt. Ltd',
+    'Adelmar Pharma GMBH',
+    'SBL Pvt. Ltd.',
+    "Lord's Homeopathic Laboratory Pvt.Ltd",
+    'LDD Bioscience Pvt. Ltd.',
+    'Boiron Laboratories Pvt Ltd',
+    'Hahnemann Scientific Laboratory (India) Pvt. Ltd.',
+    'Similia Homoeo Laboratory',
+    'Nanak Laboratories Pvt Ltd',
+    'Bjain Pharmaceuticals Pvt. Ltd',
+    'Wheezal Homeo Pharma',
+    'Hahnemann Pure Drug Co.Pvt.Ltd',
+    'Healwell International Limited',
+    'Doliosis Homoeo Pharma Pvt. Ltd.',
+    'M/s. Allen Homeo & Herbal Products Ltd',
+    'Dr.Raj Homoeo Pharmacy',
+    'Renovision Exports Pvt.Ltd.',
+    'Medilife Impex Pvt. Ltd.',
+    'Nipco Homeopathic Products',
+    'Medilexicon Pharmaceuticals Pvt. Ltd.',
+    'Bahola Labs',
+    'Bakson Drugs & Pharmaceuticals Pvt.Ltd.',
+    'Hapro Homeo-Chem (P) Ltd.',
+    'New Life Laboratories Pvt.Ltd',
+    'Powell Laboratories',
+    'The Bachflower Mix',
+    'Medisynth Ch. Pvt. Ltd',
+    'Bhandari Homeopathic Laboratories',
+    'Fourrts India Pvt Ltd',
+    'Vashisht Homoeopathic Pharmaceuticals',
+    'Hering Pharma',
+    'Adven Biotech Pvt. Ltd',
+    'Holistic Remedies Pvt. Ltd',
+    'The American Homoeo Laboratory',
+    'Nikir Laboratories',
+    'Biohome Pharmacy',
+    'Homoeo Laboratories Pune',
+    'Sava Healthcare Ltd.',
+    'Dr Willmar Schwabe',
+    'M/S CIPZER',
+    'Le-Vanza Food & Herbals',
+    'Santi Homoeo Private Limited',
+    'Riaan Wellness Pvt Ltd',
+    'Indiyaa Distribution Networks Llp',
+    'Mahhaguru Navgrah Private Limited',
+    'Natel Neutratec (INDIA) Pvt. Ltd.',
+    'Reckeweg India'
+]
+
+var manufacturers2 = [
+    'Dr. Roshanlal Aggarwal & Sons P. Ltd',
+    'Dr.Willmar Schwabe India Pvt. Ltd',
+    'Adelmar Pharma GMBH',
+    'SBL Pvt. Ltd.',
+    'Global India Enterprises',
+    "Lord's Homeopathic Laboratory Pvt.Ltd",
+    'LDD Bioscience Pvt. Ltd.',
+    'Boiron Laboratories Pvt Ltd',
+    'Dabur India Ltd',
+    'Hahnemann Scientific Laboratory (India) Pvt. Ltd.',
+    'Similia Homoeo Laboratory',
+    'Axiom Ayurveda Private Limited',
+    'The Himalaya Drug Company',
+    'Kerala Ayurveda Ltd',
+    'Patanjali Ayurved Ltd',
+    'Nanak Laboratories Pvt Ltd',
+    'Bjain Pharmaceuticals Pvt. Ltd',
+    'Sriveda Sattva Pvt Ltd',
+    'Adret Retail Pvt Ltd, (Kapiva)',
+    'Wheezal Homeo Pharma',
+    'Herbolab India Pvt Ltd',
+    'Hahnemann Pure Drug Co.Pvt.Ltd',
+    'Healwell International Limited',
+    'Kairali Ayurvedic Products Pvt. Ltd',
+    'Lama Pharmaceuticals',
+    'Doliosis Homoeo Pharma Pvt. Ltd.',
+    'Herbalify Global',
+    'Innoveda Herbs Private Limited',
+    'Emami Ltd',
+    'Herbal Canada',
+    'M/s. Allen Homeo & Herbal Products Ltd',
+    'Kradha Enterprises',
+    'Planet Ayurveda',
+    'Swadeshi Ayurved',
+    'Shree Baidyanath Ayurved Bhawan Pvt Ltd,Nagpur',
+    'Charak Pharma Pvt Ltd',
+    'Dr.Raj Homoeo Pharmacy',
+    'Khadi Organique',
+    'Renovision Exports Pvt.Ltd.',
+    'Swadeshi',
+    'Jiva Ayurvedic Pharmacy Ltd',
+    'S A Herbal Bioactives LLP',
+    'Medilife Impex Pvt. Ltd.',
+    'Life Aveda',
+    'Shree Baidyanath Ayurved Bhawan Pvt Ltd,Kolkata',
+    'Raju Agarwal',
+    'Skm Siddha And Ayurvedha Company India Pvt Ltd',
+    'Nipco Homeopathic Products',
+    'Medilexicon Pharmaceuticals Pvt. Ltd.',
+    'Pravek Kalp Pvt Ltd'
+  ]
+
+
+
+
+
+
+
+var allProd = [
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/821936/sbl_dibonil_liquid_30_ml_0_0.jpg",
+        "product_name": "SBL Dibonil Liquid 30 ml",
+        "manufacturer": "Mkt: SBL Pvt. Ltd.",
+        "price_box": "Rs. 115.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/826075/dr_reckeweg_r73_spondarthrin_drops_22_ml_0_0.jpg",
+        "product_name": "Dr. Reckeweg R73 Spondarthrin Drops 22 ml",
+        "manufacturer": "Mkt: Dr. Roshanlal Aggarwal & Sons P. Ltd",
+        "price_box": "Rs. 250.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/826136/dr_reckeweg_r9_jutussin_drops_22_ml_0.jpg",
+        "product_name": "Dr. Reckeweg R9 Jutussin Drops 22 ml",
+        "manufacturer": "Mkt: Dr. Roshanlal Aggarwal & Sons P. Ltd",
+        "price_box": "Rs. 250.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/821954/sbl_b_trim_drops_30_ml_0.jpg",
+        "product_name": "SBL B-TRIM DROPS 30 ml",
+        "manufacturer": "Mkt: SBL Pvt. Ltd.",
+        "price_box": "Rs. 165.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/821945/sbl_scalptone_tablet_25_gm_0.jpg",
+        "product_name": "SBL Scalptone Tablet 25 gm",
+        "manufacturer": "Mkt: SBL Pvt. Ltd.",
+        "price_box": "Rs. 140.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/821951/sbl_vertefine_drops_30_ml_0.jpg",
+        "product_name": "SBL Vertefine Drops 30 ml",
+        "manufacturer": "Mkt: SBL Pvt. Ltd.",
+        "price_box": "Rs. 110.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/821943/sbl_rite_hite_tablet_25_gm_0.jpg",
+        "product_name": "SBL Rite-Hite Tablet 25 gm",
+        "manufacturer": "Mkt: SBL Pvt. Ltd.",
+        "price_box": "Rs. 140.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/826105/dr_reckeweg_r42_haemovenin_drops_22_ml_0.jpg",
+        "product_name": "Dr. Reckeweg R42 Haemovenin Drops 22 ml",
+        "manufacturer": "Mkt: Dr. Roshanlal Aggarwal & Sons P. Ltd",
+        "price_box": "Rs. 250.00",
+        "category": "Homeopathy"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/15917/dabur_pudin_hara_pearls_capsule_10_s_0.jpg",
+        "product_name": "Dabur Pudin Hara Pearls Capsule 10's",
+        "manufacturer": "Mkt: Dabur India Ltd",
+        "price_box": "Rs. 20.00",
+        "save_badge": "",
+        "price": "",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/341494/liv_52_tablet_100_s_0.jpg",
+        "product_name": "Himalaya Liv.52 Tablet 100's",
+        "manufacturer": "Mkt: The Himalaya Drug Company",
+        "price_box": "Rs. 101.40",
+        "save_badge": "22% OFF",
+        "price": "Rs. 130.00",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/390287/galact_granules_200gm_0.jpg",
+        "product_name": "Galact Granules - Elaichi Flavour 200gm",
+        "manufacturer": "Mkt: Emcure Pharmaceuticals Ltd",
+        "price_box": "Rs. 306.80",
+        "save_badge": "20% OFF",
+        "price": "Rs. 383.50",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/303384/confido_tablet_60_s_0.jpg",
+        "product_name": "Himalaya Confido Tablet 60's",
+        "manufacturer": "Mkt: The Himalaya Drug Company",
+        "price_box": "Rs. 137.95",
+        "save_badge": "11% OFF",
+        "price": "Rs. 155.00",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/104243/liv_52_hb_capsule_10s_0_0.jpg",
+        "product_name": "Himalaya Liv.52 HB Capsule 10's",
+        "manufacturer": "Mkt: The Himalaya Drug Company",
+        "price_box": "Rs. 124.60",
+        "save_badge": "11% OFF",
+        "price": "Rs. 140.00",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/359873/septilin_tablet_60_s_0.jpg",
+        "product_name": "Himalaya Septilin Tablet 60's",
+        "manufacturer": "Mkt: The Himalaya Drug Company",
+        "price_box": "Rs. 135.30",
+        "save_badge": "18% OFF",
+        "price": "Rs. 165.00",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/12749/dabur_chyawanprash_awaleha_500_gm_0.jpg",
+        "product_name": "Dabur Chyawanprash Awaleha 500 gm",
+        "manufacturer": "Mkt: Dabur India Ltd",
+        "price_box": "Rs. 210.00",
+        "save_badge": "",
+        "price": "",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/814310/himalaya_wellness_ashvagandha_tablet_60_s_0.jpg",
+        "product_name": "Himalaya Wellness Ashvagandha Tablet 60's",
+        "manufacturer": "Mkt: The Himalaya Drug Company",
+        "price_box": "Rs. 165.00",
+        "save_badge": "",
+        "price": "",
+        "category": "Ayurvedic"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/834545/hamdard_safi_syrup_100_ml_0.jpg",
+        "product_name": "Hamdard Safi Syrup 100 ml",
+        "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
+        "price_box": "Rs. 60.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/834927/hamdard_joshina_syrup_200_ml_0.jpg",
+        "product_name": "Hamdard Joshina Syrup 200 ml",
+        "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
+        "price_box": "Rs. 120.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/834537/hamdard_sualin_tab_60_s_0.jpg",
+        "product_name": "Hamdard Sualin Tab 60's",
+        "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
+        "price_box": "Rs. 65.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/834544/hamdard_roghan_badam_shirin_100_ml_0.jpg",
+        "product_name": "Hamdard Roghan Badam Shirin Oil 100 ml",
+        "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
+        "price_box": "Rs. 425.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/834542/hamdard_roghan_badam_shirin_25_ml_0.jpg",
+        "product_name": "Hamdard Roghan Badam Shirin 25 ml",
+        "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
+        "price_box": "Rs. 115.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/834324/rex_jawarish_kamooni_125_gm_0.jpg",
+        "product_name": "Rex Jawarish Kamooni 125 gm",
+        "manufacturer": "Mkt: Rex Remedies Ltd",
+        "price_box": "Rs. 85.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/834543/hamdard_roghan_badam_shirin_50_ml_0.jpg",
+        "product_name": "Hamdard Roghan Badam Shirin 50 ml",
+        "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
+        "price_box": "Rs. 198.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/316749/hamdard_safi_syrup_500_ml_0.jpg",
+        "product_name": "Hamdard Safi Syrup 500 ml",
+        "manufacturer": "Mkt: Hamdard Laboratories India Pvt Ltd",
+        "price_box": "Rs. 220.00",
+        "category": "Unani"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/887242/dr_jrk_dano_anti_dandruff_oil_100_ml_0.jpg",
+        "product_name": "Dr. JRK Dano Anti Dandruff Oil 100 ml",
+        "manufacturer": "Mkt: Caredura Products",
+        "price_box": "Rs. 250.00",
+        "save_badge": "",
+        "price ": "",
+        "category": "Siddha"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/887254/dr_jrk_pesin_500_mg_tablet_60_s_0.jpg",
+        "product_name": "Dr. JRK Pesin 500 mg Tablet 60's",
+        "manufacturer": "Mkt: Caredura Products",
+        "price_box": "Rs. 654.00",
+        "save_badge": "",
+        "price ": "",
+        "category": "Siddha"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/851658/skm_kunkumadi_thaila_lepam_15_gm_0.jpg",
+        "product_name": "SKM Kunkumadi Thaila Lepam 15 gm",
+        "manufacturer": "Mkt: Skm Siddha And Ayurvedha Company India Pvt Ltd",
+        "price_box": "Rs. 65.70",
+        "save_badge": "10% OFF",
+        "price ": "Rs. 73.00",
+        "category": "Siddha"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/840362/herbodaya_nilavembu_kudineer_chooranam_pack_of_20_x_5_gm_0_1.jpg",
+        "product_name": "Herbodaya Nilavembu Kudineer Chooranam (Pack of 20 x 5 gm)",
+        "manufacturer": "Mkt: Skm Siddha And Ayurvedha Company India Pvt Ltd",
+        "price_box": "Rs. 180.00",
+        "save_badge": "10% OFF",
+        "price ": "Rs. 200.00",
+        "category": "Siddha"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/851644/skm_viigorwin_legiyam_200_gm_0.jpg",
+        "product_name": "SKM Viigorwin Legiyam 200 gm",
+        "manufacturer": "Mkt: Skm Siddha And Ayurvedha Company India Pvt Ltd",
+        "price_box": "Rs. 468.00",
+        "save_badge": "10% OFF",
+        "price ": "Rs. 520.00",
+        "category": "Siddha"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/851652/skm_aswaganthy_legiyam_500_gm_0.jpg",
+        "product_name": "SKM Aswaganthy Legiyam 500 gm",
+        "manufacturer": "Mkt: Skm Siddha And Ayurvedha Company India Pvt Ltd",
+        "price_box": "Rs. 354.60",
+        "save_badge": "10% OFF",
+        "price ": "Rs. 394.00",
+        "category": "Siddha"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/851651/skm_aswaganthy_legiyam_200_gm_0.jpg",
+        "product_name": "SKM Aswaganthy Legiyam 200 gm",
+        "manufacturer": "Mkt: Skm Siddha And Ayurvedha Company India Pvt Ltd",
+        "price_box": "Rs. 148.50",
+        "save_badge": "10% OFF",
+        "price ": "Rs. 165.00",
+        "category": "Siddha"
+    },
+    {
+        "image_src": "https://www.netmeds.com/images/product-v1/150x150/851650/skm_nellikkai_legiyam_200_gm_0.jpg",
+        "product_name": "SKM Nellikkai Legiyam 200 gm",
+        "manufacturer": "Mkt: Skm Siddha And Ayurvedha Company India Pvt Ltd",
+        "price_box": "Rs. 130.50",
+        "save_badge": "10% OFF",
+        "price ": "Rs. 145.00",
+        "category": "Siddha"
+    }
+]
